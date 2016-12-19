@@ -445,7 +445,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  margin-top: 45%;
+  margin-top: 40%;
   position: relative;
   z-index: 6; }
 
@@ -453,11 +453,8 @@ body {
   width: 100%;
   height: auto;
   position: absolute;
-  top: -10%;
+  top: 5%;
   z-index: 10; }
-  @media screen and (max-width: 768px) {
-    #overlayPattern {
-      top: 5%; } }
   @media screen and (max-width: 480px) {
     #overlayPattern {
       top: 12%; } }
@@ -467,11 +464,11 @@ body {
   z-index: 12; }
   .formContainer input {
     text-align: left;
-    height: 120px;
+    height: 132px;
     border-radius: 0;
     margin-top: 10px;
     font-size: 132px;
-    padding-top: 20px;
+    line-height: 1em;
     text-transform: uppercase; }
     @media screen and (max-width: 768px) {
       .formContainer input {
@@ -479,7 +476,7 @@ body {
     @media screen and (max-width: 480px) {
       .formContainer input {
         font-size: 62px;
-        height: 80px; } }
+        height: 72px; } }
 
 #hiddenPattern {
   width: 100%;
@@ -514,6 +511,9 @@ body {
   text-align: left;
   display: block;
   margin-bottom: 300px; }
+  .leasingTextBottom a {
+    color: #FFFFFF !important;
+    text-decoration: none; }
   @media screen and (max-width: 768px) {
     .leasingTextBottom {
       font-size: 60px;

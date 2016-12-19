@@ -30,12 +30,21 @@ $("#submitInput").click(function (e) {
     $(".thankYouOverlay img").addClass("active");
     $(".thankYouOverlay").addClass("active");
     $("form").addClass("hide");
+
+    setTimeout(function () {
+        $("html, body").animate({ scrollTop: 0 }, 1500);
+    }, 3000);
+
+    setTimeout(function () {
+        location.reload();
+    }, 4500);
 });
 
 
 document.addEventListener("click", function(){
     if($(".thankYouSymbols").hasClass("active")){
         $("body").click(function(){
+            $(".thankYouSymbols").removeClass("active");
             $(".thankYouOverlay img").removeClass("active");
             $(".thankYouOverlay").removeClass("active");
             $("form").removeClass("hide");
