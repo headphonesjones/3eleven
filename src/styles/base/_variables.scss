@@ -1,0 +1,33 @@
+// Variables go here
+@keyframes fadeIn {
+  from {
+    opacity:0;
+    filter: grayscale(100%);
+  }
+  to {
+    opacity:1;
+    filter: grayscale(0%);
+  }
+}
+
+@keyframes grayToColor {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0%);
+  }
+}
+
+@keyframes fadeUpIn {
+  from {
+    filter: grayscale(0%);
+    opacity: 0;
+    top: 50%;
+  }
+  to {
+    filter: grayscale(100%);
+    opacity: 1;
+    top: 30%;
+  }
+}
