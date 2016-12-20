@@ -36,13 +36,13 @@ $( document ).ready(function() {
             $(".thankYouOverlay").addClass("active");
             $("form").addClass("hide");
 
-            // setTimeout(function () {
-            //     $("html, body").animate({ scrollTop: 0 }, 1500);
-            // }, 3000);
-            //
-            // // setTimeout(function () {
-            // //     location.reload();
-            // // }, 4500);
+            setTimeout(function () {
+                $("html, body").animate({ scrollTop: 0 }, 1500);
+            }, 3000);
+
+            setTimeout(function () {
+                location.reload();
+            }, 4500);
         }
     });
 });
