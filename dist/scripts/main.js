@@ -23,39 +23,31 @@ $( document ).ready(function() {
             $("#building").addClass("active");
         }, 300);
     });
-});
 
-// $("#submitInput").click(function (e) {
-//     e.preventDefault();
-//     $(".thankYouOverlay img").addClass("active");
-//     $(".thankYouOverlay").addClass("active");
-//     $("form").addClass("hide");
-//
-//     setTimeout(function () {
-//         $("html, body").animate({ scrollTop: 0 }, 1500);
-//     }, 3000);
-//
-//     setTimeout(function () {
-//         location.reload();
-//     }, 4500);
-// });
+    $("#form").submit(function (e) {
+        e.preventDefault();
+        var form = $(this);
+        $('#form').parsley().validate();
 
-function validateForm(e) {
-    e.preventDefault();
+        if(form.parsley().isValid()){
+            // $.post("contactForm.php", $(this).serialize());
+            $(".thankYouOverlay img").css("display", "block");
+            $(".thankYouOverlay img").addClass("active");
+            $(".thankYouOverlay").addClass("active");
+            $("form").addClass("hide");
 
-    var email = $("#emailInput");
-
-    email.addEventListener("keyup", function (event) {
-        if (email.validity.typeMismatch) {
-            email.setCustomValidity("Please enter a valid email address.");
-        } else {
-            email.setCustomValidity("");
+            // setTimeout(function () {
+            //     $("html, body").animate({ scrollTop: 0 }, 1500);
+            // }, 3000);
+            //
+            // // setTimeout(function () {
+            // //     location.reload();
+            // // }, 4500);
         }
     });
+});
 
-    return false;
 
-}
 
 
 document.addEventListener("click", function(){

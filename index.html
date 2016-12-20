@@ -27,18 +27,18 @@
     </div>
     <div class="container formContainer">
       <div class="row">
-        <form name="3elevenForm" action="" onsubmit="return validateForm()" method="post">
+        <form name="3elevenForm" id="form">
           <div class="twelve columns">
-            <input type="text" id="nameInput" placeholder="NAME" class="u-full-width" required>
+            <input type="text" id="nameInput" placeholder="NAME" class="u-full-width" name="name" required>
           </div>
           <div class="twelve columns">
-            <input type="email" id="emailInput" placeholder="EMAIL" class="u-full-width" required>
+            <input type="email" id="emailInput" placeholder="EMAIL" class="u-full-width" name="email" required>
           </div>
           <div class="twelve columns">
-            <input type="tel" id="phoneInput" placeholder="PHONE" class="u-full-width" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" required title="Please enter a valid phone number in the following format: 123-456-7890 or 1234567890">
+            <input type="tel" id="phoneInput" placeholder="PHONE" class="u-full-width" name="phone" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" required title="Please enter a valid phone number in the following format: 123-456-7890 or 1234567890">
           </div>
           <div class="twelve columns">
-            <input type="submit" id="submitInput" class="u-full-width" value="SUBMIT">
+            <input type="submit" id="submitInput" class="u-full-width" name="submit" value="SUBMIT">
           </div>
         </form>
       </div>
@@ -83,6 +83,7 @@
     <img src="dist/images/source.gif" width="400" height="auto">
   </div>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.6.0/parsley.min.js"></script>
   <script src="/dist/scripts/main.js"></script>
 
 </body>
