@@ -485,13 +485,13 @@ body {
   z-index: 12; }
   .formContainer input {
     text-align: left;
-    height: 132px;
+    height: 140px;
     border-radius: 0;
     margin-top: 10px;
-    font-size: 132px;
-    line-height: 1em;
-    text-transform: uppercase;
-    padding-top: 20px; }
+    font-size: 112px;
+    text-transform: uppercase; }
+    .formContainer input:focus {
+      outline-offset: 0px; }
     @media screen and (max-width: 768px) {
       .formContainer input {
         font-size: 98px; } }
@@ -511,10 +511,10 @@ body {
   font-size: 124px;
   line-height: 124px;
   color: #FFFFFF;
-  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000; }
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000; }
   @media screen and (max-width: 480px) {
     .leasingText {
-      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; } }
+      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; } }
 
 .leasingTextTop {
   display: block;
@@ -639,12 +639,10 @@ footer {
   background-color: #000000;
   color: #FFFFFF;
   border: none;
-  padding-left: 14px;
-  padding-top: 10px; }
+  padding-left: 14px; }
   @media screen and (max-width: 480px) {
     #submitInput {
-      padding-left: 14px;
-      padding-top: 10px; } }
+      padding-left: 14px; } }
 
 #logo-symbol-1 {
   z-index: 2; }
