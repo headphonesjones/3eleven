@@ -15,7 +15,7 @@ $purple: #862567;
 }
 
 body{
-  background-image: url("../images/3Eleven-Holdingpage-161104-1-TK-BG.png");
+  background-image: url("../images/3Eleven-Holdingpage-161219-1-TK-BG.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -48,6 +48,14 @@ body{
   margin-top: 40%;
   position: relative;
   z-index: 6;
+
+  @media screen and (min-width: 1500px){
+    margin-top: 50%;
+  }
+
+  @media screen and (min-width: 1800px){
+    margin-top: 60%;
+  }
 }
 
 #overlayPattern{
@@ -56,10 +64,30 @@ body{
   position: absolute;
   top: 5%;
   z-index: 10;
-  
+
+  @media screen and (min-width: 1300px){
+    top: -7%;
+  }
+
+  @media screen and (min-width: 1440px){
+    top: -20%;
+  }
+
+  @media screen and (min-width: 1500px){
+    top: -25%;
+  }
+
+  @media screen and (min-width: 1600px){
+    top: -35%;
+  }
+
+  @media screen and (min-width: 1900px){
+    display: none;
+  }
+
 
   @media screen and (max-width: 480px){
-    top: 12%;
+    top: 5%;
   }
 }
 
@@ -76,7 +104,12 @@ body{
     margin-top: 10px;
     font-size: 132px;
     line-height: 1em;
+    padding: 0;
     text-transform: uppercase;
+
+    &:focus{
+      line-height: 1em;
+    }
 
 
     @media screen and (max-width: 768px){
@@ -378,6 +411,7 @@ form{
   img{
     position: absolute;
     opacity: 0;
+    display: none;
   }
 
   &.active{

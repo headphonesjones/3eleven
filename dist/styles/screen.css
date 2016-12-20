@@ -421,7 +421,7 @@ th {
   src: url("../fonts/ReplicaStd-Bold.otf"); }
 
 body {
-  background-image: url("../images/3Eleven-Holdingpage-161104-1-TK-BG.png");
+  background-image: url("../images/3Eleven-Holdingpage-161219-1-TK-BG.png");
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
@@ -448,6 +448,12 @@ body {
   margin-top: 40%;
   position: relative;
   z-index: 6; }
+  @media screen and (min-width: 1500px) {
+    #buildingImage {
+      margin-top: 50%; } }
+  @media screen and (min-width: 1800px) {
+    #buildingImage {
+      margin-top: 60%; } }
 
 #overlayPattern {
   width: 100%;
@@ -455,9 +461,24 @@ body {
   position: absolute;
   top: 5%;
   z-index: 10; }
+  @media screen and (min-width: 1300px) {
+    #overlayPattern {
+      top: -7%; } }
+  @media screen and (min-width: 1440px) {
+    #overlayPattern {
+      top: -20%; } }
+  @media screen and (min-width: 1500px) {
+    #overlayPattern {
+      top: -25%; } }
+  @media screen and (min-width: 1600px) {
+    #overlayPattern {
+      top: -35%; } }
+  @media screen and (min-width: 1900px) {
+    #overlayPattern {
+      display: none; } }
   @media screen and (max-width: 480px) {
     #overlayPattern {
-      top: 12%; } }
+      top: 5%; } }
 
 .formContainer {
   position: relative;
@@ -469,7 +490,10 @@ body {
     margin-top: 10px;
     font-size: 132px;
     line-height: 1em;
+    padding: 0;
     text-transform: uppercase; }
+    .formContainer input:focus {
+      line-height: 1em; }
     @media screen and (max-width: 768px) {
       .formContainer input {
         font-size: 98px; } }
@@ -708,7 +732,8 @@ form {
   height: auto; }
   .thankYouOverlay img {
     position: absolute;
-    opacity: 0; }
+    opacity: 0;
+    display: none; }
   .thankYouOverlay.active {
     z-index: 12; }
   .thankYouOverlay #thank-symbol-1.active {

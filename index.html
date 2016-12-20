@@ -27,15 +27,15 @@
     </div>
     <div class="container formContainer">
       <div class="row">
-        <form>
+        <form name="3elevenForm" action="" onsubmit="return validateForm()" method="post">
           <div class="twelve columns">
-            <input type="text" id="nameInput" placeholder="NAME" class="u-full-width">
+            <input type="text" id="nameInput" placeholder="NAME" class="u-full-width" required>
           </div>
           <div class="twelve columns">
-            <input type="email" id="emailInput" placeholder="EMAIL" class="u-full-width">
+            <input type="email" id="emailInput" placeholder="EMAIL" class="u-full-width" required>
           </div>
           <div class="twelve columns">
-            <input type="tel" id="phoneInput" placeholder="PHONE" class="u-full-width">
+            <input type="tel" id="phoneInput" placeholder="PHONE" class="u-full-width" pattern="^\D?(\d{3})\D?\D?(\d{3})\D?(\d{4})$" required title="Please enter a valid phone number in the following format: 123-456-7890 or 1234567890">
           </div>
           <div class="twelve columns">
             <input type="submit" id="submitInput" class="u-full-width" value="SUBMIT">
