@@ -104,12 +104,9 @@ body{
     margin-top: 10px;
     font-size: 132px;
     line-height: 1em;
-    padding: 0;
     text-transform: uppercase;
+    padding-top: 20px;
 
-    &:focus{
-      line-height: 1em;
-    }
 
 
     @media screen and (max-width: 768px){

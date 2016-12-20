@@ -490,10 +490,8 @@ body {
     margin-top: 10px;
     font-size: 132px;
     line-height: 1em;
-    padding: 0;
-    text-transform: uppercase; }
-    .formContainer input:focus {
-      line-height: 1em; }
+    text-transform: uppercase;
+    padding-top: 20px; }
     @media screen and (max-width: 768px) {
       .formContainer input {
         font-size: 98px; } }
