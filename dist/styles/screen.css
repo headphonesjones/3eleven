@@ -904,7 +904,7 @@ form {
     -webkit-transform: translate(0px, 0px);
             transform: translate(0px, 0px); } }
 
-.parsley-type, .parsley-required {
+.parsley-type, .parsley-required, .parsley-pattern {
   list-style: none;
   color: white;
   font-size: 18px; }
