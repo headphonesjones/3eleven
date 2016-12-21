@@ -30,19 +30,39 @@ $( document ).ready(function() {
         $('#form').parsley().validate();
 
         if(form.parsley().isValid()){
-            // $.post("contactForm.php", $(this).serialize());
-            $(".thankYouOverlay img").css("display", "block");
-            $(".thankYouOverlay img").addClass("active");
-            $(".thankYouOverlay").addClass("active");
-            $("form").addClass("hide");
+            var subscribeForm = $("#form");
+            var subscribeButton = $('input[type=submit]', subscribeForm);
 
-            setTimeout(function () {
-                $("html, body").animate({ scrollTop: 0 }, 1500);
-            }, 3000);
 
-            setTimeout(function () {
-                location.reload();
-            }, 4500);
+            $.ajax({
+                url: subscribeForm.prop('action'),
+                type: 'POST',
+                crossDomain: true,
+                headers : {
+                    'accept' : 'application/javascript',
+                },
+                data: $('#form').serialize(),
+                beforeSend: function() {
+                    subscribeButton.prop('disabled', 'disabled');
+                }
+            })
+                .done(function(response) {
+                    $(".thankYouOverlay img").css("display", "block");
+                    $(".thankYouOverlay img").addClass("active");
+                    $(".thankYouOverlay").addClass("active");
+                    $("form").addClass("hide");
+
+                    setTimeout(function () {
+                        $("html, body").animate({ scrollTop: 0 }, 1500);
+                    }, 3000);
+
+                    setTimeout(function () {
+                        location.reload();
+                    }, 4500);
+                })
+                .fail(function(response) {
+                    alert('Something went wrong! Please refresh the page and try again.');
+                })
         }
     });
 });
