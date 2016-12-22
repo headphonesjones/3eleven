@@ -126,7 +126,7 @@ body{
     }
 
     @media screen and (max-width: 480px){
-      font-size: 62px;
+      font-size: 52px;
       height: 72px;
     }
   }
@@ -575,7 +575,7 @@ form{
 .parsley-type, .parsley-required, .parsley-pattern {
   list-style: none;
   color: white;
-  font-size: 18px
+  font-size: 18px;
   position: absolute;
   color: maroon;
   right: 20px;

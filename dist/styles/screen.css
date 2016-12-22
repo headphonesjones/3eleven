@@ -504,7 +504,7 @@ body {
         font-size: 98px; } }
     @media screen and (max-width: 480px) {
       .formContainer input {
-        font-size: 62px;
+        font-size: 52px;
         height: 72px; } }
 
 #hiddenPattern {
@@ -518,10 +518,10 @@ body {
   font-size: 124px;
   line-height: 124px;
   color: #FFFFFF;
-  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000; }
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000; }
   @media screen and (max-width: 480px) {
     .leasingText {
-      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; } }
+      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; } }
 
 .leasingTextTop {
   display: block;
@@ -916,7 +916,11 @@ form {
 .parsley-type, .parsley-required, .parsley-pattern {
   list-style: none;
   color: white;
-  font-size: 18px; }
+  font-size: 18px;
+  position: absolute;
+  color: maroon;
+  right: 20px;
+  margin-top: 10px; }
 
 .parsley-errors-list {
   margin-bottom: 0px; }
