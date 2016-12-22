@@ -736,7 +736,9 @@ form {
   .thankYouOverlay img {
     position: absolute;
     opacity: 0;
-    display: none; }
+    display: none;
+    width: 100%;
+    height: auto; }
   .thankYouOverlay.active {
     z-index: 12; }
   .thankYouOverlay #thank-symbol-1.active {
