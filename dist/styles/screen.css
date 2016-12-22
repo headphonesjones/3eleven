@@ -495,7 +495,8 @@ body {
     border-radius: 0;
     margin-top: 10px;
     font-size: 112px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    float: left; }
     .formContainer input:focus {
       outline-offset: 0px; }
     @media screen and (max-width: 768px) {
@@ -517,10 +518,10 @@ body {
   font-size: 124px;
   line-height: 124px;
   color: #FFFFFF;
-  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000; }
+  text-shadow: -4px -4px 0 #000, 4px -4px 0 #000, -4px 4px 0 #000, 4px 4px 0 #000; }
   @media screen and (max-width: 480px) {
     .leasingText {
-      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; } }
+      text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; } }
 
 .leasingTextTop {
   display: block;
