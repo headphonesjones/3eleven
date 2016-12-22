@@ -11,7 +11,11 @@ $purple: #862567;
   font-family: 'Replica';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/ReplicaStd-Bold.otf');
+  //src: url('../fonts/ReplicaStd-Bold.otf');
+  src: url('../fonts/ReplicaStd-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ReplicaStd-Bold.woff') format('woff'),
+  url('../fonts/ReplicaStd-Bold.ttf')  format('truetype'),
+  url('../fonts/ReplicaStd-Bold.svg#svgFontName') format('svg');
 }
 
 body{
@@ -29,6 +33,7 @@ body{
 .content{
   //min-height: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 
@@ -62,32 +67,35 @@ body{
   width: 100%;
   height: auto;
   position: absolute;
-  top: 5%;
+  top: 0%;
   z-index: 10;
 
   @media screen and (min-width: 1300px){
-    top: -7%;
+    top: -2%;
   }
 
   @media screen and (min-width: 1440px){
-    top: -20%;
+    top: -5%;
   }
 
   @media screen and (min-width: 1500px){
-    top: -25%;
+    top: -5%;
   }
 
   @media screen and (min-width: 1600px){
-    top: -35%;
+    top: -11%;
   }
 
   @media screen and (min-width: 1900px){
     display: none;
   }
 
+  @media screen and (max-width: 560px){
+    top: 3%;
+  }
 
   @media screen and (max-width: 480px){
-    top: 5%;
+    top: 3%;
   }
 }
 
