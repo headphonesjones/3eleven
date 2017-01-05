@@ -9,20 +9,50 @@ $( document ).ready(function() {
     $("#buildingImage").attr('src', '/dist/images/2279_Fitzgerald_Building_Only_0001-TK.png');
     $("#overlayPattern").attr('src', '/dist/images/3Eleven-Holdingpage-161104-1-TK-BG-onthebuilding-test.svg');
 
-    $(window).load(function () {
-        $(".preloader img").hide();
-        setTimeout(function(){
-            $(".preloader").fadeOut();
-            $("#logo-symbol-1").addClass("active");
-            $("#logo-symbol-2").addClass("active");
-            $("#logo-symbol-3").addClass("active");
-            $("#logo-symbol-4").addClass("active");
-            $("#logo-symbol-5").addClass("active");
-            $("#logo-symbol-6").addClass("active");
-            $("#logo-symbol-7").addClass("active");
-            $("#building").addClass("active");
-        }, 300);
-    });
+    var standalone = window.navigator.standalone,
+        userAgent = window.navigator.userAgent.toLowerCase(),
+        safari = /safari/.test( userAgent ),
+        ios = /iphone|ipod|ipad/.test( userAgent );
+
+    if( ios ) {
+        if ( !standalone && safari ) {
+            //browser
+            $(window).load(function () {
+                $(".preloader img").hide();
+                setTimeout(function(){
+                    $(".preloader").fadeOut();
+                    $("#logo-symbol-1").addClass("active-mobile");
+                    $("#logo-symbol-2").addClass("active-mobile");
+                    $("#logo-symbol-3").addClass("active-mobile");
+                    $("#logo-symbol-4").addClass("active-mobile");
+                    $("#logo-symbol-5").addClass("active-mobile");
+                    $("#logo-symbol-6").addClass("active-mobile");
+                    $("#logo-symbol-7").addClass("active-mobile");
+                    $("#building").addClass("active");
+                }, 300);
+            });
+        } else if ( standalone && !safari ) {
+            //standalone
+
+        } else if ( !standalone && !safari ) {
+            //uiwebview
+        };
+    } else {
+        $(window).load(function () {
+            $(".preloader img").hide();
+            setTimeout(function(){
+                $(".preloader").fadeOut();
+                $("#logo-symbol-1").addClass("active");
+                $("#logo-symbol-2").addClass("active");
+                $("#logo-symbol-3").addClass("active");
+                $("#logo-symbol-4").addClass("active");
+                $("#logo-symbol-5").addClass("active");
+                $("#logo-symbol-6").addClass("active");
+                $("#logo-symbol-7").addClass("active");
+                $("#building").addClass("active");
+            }, 300);
+        });
+    };
 
     $("#form").submit(function (e) {
         e.preventDefault();

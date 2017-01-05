@@ -430,10 +430,17 @@ body {
   font-size: 48px;
   line-height: 48px;
   overflow-x: hidden; }
+  @media screen and (min-width: 1900px) {
+    body {
+      background-size: 1900px auto;
+      background-position: 50% 0;
+      background-color: #000000; } }
 
 .content {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  max-width: 1900px;
+  margin: auto; }
 
 .container {
   max-width: 1024px; }
@@ -476,9 +483,6 @@ body {
   @media screen and (min-width: 1600px) {
     #overlayPattern {
       top: -11%; } }
-  @media screen and (min-width: 1900px) {
-    #overlayPattern {
-      display: none; } }
   @media screen and (max-width: 560px) {
     #overlayPattern {
       top: 3%; } }
@@ -660,6 +664,10 @@ footer {
             animation-fill-mode: forwards;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s; }
+  #logo-symbol-1.active-mobile {
+    top: 0;
+    left: 0;
+    opacity: 1; }
 
 #logo-symbol-2 {
   z-index: 4; }
@@ -670,6 +678,10 @@ footer {
             animation-fill-mode: forwards;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s; }
+  #logo-symbol-2.active-mobile {
+    top: 0;
+    left: 0;
+    opacity: 1; }
 
 #logo-symbol-3 {
   z-index: 3; }
@@ -680,6 +692,10 @@ footer {
             animation-fill-mode: forwards;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s; }
+  #logo-symbol-3.active-mobile {
+    top: 0;
+    left: 0;
+    opacity: 1; }
 
 #logo-symbol-4 {
   z-index: 2; }
@@ -690,6 +706,10 @@ footer {
             animation-fill-mode: forwards;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s; }
+  #logo-symbol-4.active-mobile {
+    top: 0;
+    left: 0;
+    opacity: 1; }
 
 #logo-symbol-5 {
   z-index: 3; }
@@ -700,6 +720,10 @@ footer {
             animation-fill-mode: forwards;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s; }
+  #logo-symbol-5.active-mobile {
+    top: 0;
+    left: 0;
+    opacity: 1; }
 
 #logo-symbol-6 {
   z-index: 2; }
@@ -710,6 +734,10 @@ footer {
             animation-fill-mode: forwards;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s; }
+  #logo-symbol-6.active-mobile {
+    top: 0;
+    left: 0;
+    opacity: 1; }
 
 #logo-symbol-7 {
   z-index: 1; }
@@ -720,6 +748,10 @@ footer {
             animation-fill-mode: forwards;
     -webkit-animation-delay: 1.5s;
             animation-delay: 1.5s; }
+  #logo-symbol-7.active-mobile {
+    top: 0;
+    left: 0;
+    opacity: 1; }
 
 form {
   opacity: 1;
