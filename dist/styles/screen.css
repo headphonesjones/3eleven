@@ -430,16 +430,10 @@ body {
   font-size: 48px;
   line-height: 48px;
   overflow-x: hidden; }
-  @media screen and (min-width: 1900px) {
-    body {
-      background-size: 1900px auto;
-      background-position: 50% 0;
-      background-color: #000000; } }
 
 .content {
   overflow: hidden;
   position: relative;
-  max-width: 1900px;
   margin: auto; }
 
 .container {
@@ -464,31 +458,69 @@ body {
   @media screen and (min-width: 1800px) {
     #buildingImage {
       margin-top: 60%; } }
+  @media screen and (min-width: 2100px) {
+    #buildingImage {
+      margin-top: 70%; } }
 
 #overlayPattern {
   width: 100%;
   height: auto;
   position: absolute;
-  top: 0%;
-  z-index: 10; }
-  @media screen and (min-width: 1300px) {
+  top: 3.2%;
+  z-index: 10;
+  -webkit-transition: all .2s ease;
+          transition: all .2s ease; }
+  @media screen and (min-width: 550px) {
     #overlayPattern {
-      top: -2%; } }
+      top: 1%; } }
+  @media screen and (min-width: 1240px) {
+    #overlayPattern {
+      top: .5%; } }
+  @media screen and (min-width: 1340px) {
+    #overlayPattern {
+      top: -2.5%; } }
   @media screen and (min-width: 1440px) {
     #overlayPattern {
-      top: -5%; } }
-  @media screen and (min-width: 1500px) {
+      top: -6%; } }
+  @media screen and (min-width: 1540px) {
     #overlayPattern {
-      top: -5%; } }
-  @media screen and (min-width: 1600px) {
+      top: -8%; } }
+  @media screen and (min-width: 1640px) {
     #overlayPattern {
       top: -11%; } }
-  @media screen and (max-width: 560px) {
+  @media screen and (min-width: 1740px) {
     #overlayPattern {
-      top: 3%; } }
-  @media screen and (max-width: 480px) {
+      top: -14%; } }
+  @media screen and (min-width: 1840px) {
     #overlayPattern {
-      top: 3%; } }
+      top: -17%; } }
+  @media screen and (min-width: 1940px) {
+    #overlayPattern {
+      top: -20%; } }
+  @media screen and (min-width: 2040px) {
+    #overlayPattern {
+      top: -22%; } }
+  @media screen and (min-width: 2240px) {
+    #overlayPattern {
+      top: -26%; } }
+  @media screen and (min-width: 2340px) {
+    #overlayPattern {
+      top: -27%; } }
+  @media screen and (min-width: 2440px) {
+    #overlayPattern {
+      top: -31%; } }
+  @media screen and (min-width: 2540px) {
+    #overlayPattern {
+      top: -33%; } }
+  @media screen and (min-width: 2640px) {
+    #overlayPattern {
+      top: -35%; } }
+  @media screen and (min-width: 2740px) {
+    #overlayPattern {
+      top: -38%; } }
+  @media screen and (min-width: 2840px) {
+    #overlayPattern {
+      display: none; } }
 
 .formContainer {
   position: relative;

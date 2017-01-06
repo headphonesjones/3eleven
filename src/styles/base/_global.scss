@@ -28,19 +28,11 @@ body{
   font-size: 48px;
   line-height: 48px;
   overflow-x: hidden;
-
-  @media screen and (min-width: 1900px){
-    background-size: 1900px auto;
-    background-position: 50% 0;
-    background-color: $black;
-  }
 }
 
 .content{
-  //min-height: 100%;
   overflow: hidden;
   position: relative;
-  max-width: 1900px;
   margin: auto;
 }
 
@@ -71,38 +63,88 @@ body{
   @media screen and (min-width: 1800px){
     margin-top: 60%;
   }
+
+  @media screen and (min-width: 2100px){
+    margin-top: 70%;
+  }
 }
 
 #overlayPattern{
   width: 100%;
   height: auto;
   position: absolute;
-  top: 0%;
+  top: 3.2%;
   z-index: 10;
+  transition: all .2s ease;
 
-  @media screen and (min-width: 1300px){
-    top: -2%;
+  @media screen and (min-width: 550px){
+    top: 1%;
   }
 
-  @media screen and (min-width: 1440px){
-    top: -5%;
+  @media screen and (min-width: 1240px) {
+    top: .5%;
   }
 
-  @media screen and (min-width: 1500px){
-    top: -5%;
+  @media screen and (min-width: 1340px) {
+    top: -2.5%;
   }
 
-  @media screen and (min-width: 1600px){
+  @media screen and (min-width: 1440px) {
+    top: -6%;
+  }
+
+  @media screen and (min-width: 1540px) {
+    top: -8%;
+  }
+
+  @media screen and (min-width: 1640px) {
     top: -11%;
   }
 
-  @media screen and (max-width: 560px){
-    top: 3%;
+  @media screen and (min-width: 1740px) {
+    top: -14%;
   }
 
-  @media screen and (max-width: 480px){
-    top: 3%;
+  @media screen and (min-width: 1840px) {
+    top: -17%;
   }
+
+  @media screen and (min-width: 1940px) {
+    top: -20%;
+  }
+
+  @media screen and (min-width: 2040px) {
+    top: -22%;
+  }
+
+  @media screen and (min-width: 2240px) {
+    top: -26%;
+  }
+
+  @media screen and (min-width: 2340px) {
+    top: -27%;
+  }
+
+  @media screen and (min-width: 2440px) {
+    top: -31%;
+  }
+
+  @media screen and (min-width: 2540px) {
+    top: -33%;
+  }
+
+  @media screen and (min-width: 2640px) {
+    top: -35%;
+  }
+
+  @media screen and (min-width: 2740px) {
+    top: -38%;
+  }
+
+  @media screen and (min-width: 2840px) {
+    display: none;
+  }
+
 }
 
 .formContainer{
